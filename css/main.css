@@ -282,6 +282,21 @@ textarea {
      height: 20vh;
    }
 
+   /* Section rules */
+
+   .circle span {
+     font-size: 1.2em;
+     font-weight: bold;
+   }
+
+   .chart-container {
+     margin-bottom: 3em;
+   }
+
+   .chart div {
+     height: 100%;
+   }
+
 
 
 /* ==========================================================================
