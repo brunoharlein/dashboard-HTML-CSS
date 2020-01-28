@@ -255,6 +255,29 @@ textarea {
      align-items: flex-end;
    }
 
+   table {
+     margin-top: 1em;
+     border: 1px solid lightgrey;
+     margin: 2em 0;
+     border-collapse: collapse;
+   }
+
+   caption {
+     padding: 1em 0;
+   }
+
+   thead th, td {
+     padding: 1em 0;
+   }
+
+   tr {
+     border: 1px solid lightgrey;
+   }
+
+   td {
+     text-align: center;
+   }
+
 
 
 /* ==========================================================================
