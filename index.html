@@ -8,18 +8,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="batman-icon.png">
   <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f688ef465a.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.0.13/css/all.css” integrity=“sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp” crossorigin=“anonymous”> -->
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  
+  <!-- Top of the page -->
+  <header class="flex full-center mainBackground">
+    <h1>Sales dashboard</h1>
+  </header>
+
+  <!-- Start of main content with indicators -->
+  <main class="container flex between">
+    <!-- Start of left aside to display sales data -->
+    <aside>
+      <h2>Sales and states</h2>
+      <div>
+        <!-- Form to sort the data -->
+        <form action="index.html" method="post" class="flex">
+          <div>
+            <label for="name">Product</label>
+            <input type="text" id="name" name="article" value="" placeholder="Product's name">
+          </div>
+          <div>
+            <label for="price-select">Price</label>
+            <select name="price" id="price-select">
+              <option value="asc">- to +</option>
+              <option value="desc">+ to -</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity">Quantity > to</label>
+            <input type="number" id="quantity" name="quantity" value="0">
+          </div>
+          <div class="flex center" id="submit">
+            <input type="submit" name="submit" value="Sort">
+          </div>
+        </form>
+        <!-- Table to display data -->
+        <table class="w-100 t-center">
+          <caption class="mainBackground italic">Sales records</caption>
+          <thead>
+            <tr>
+              <th>Article</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- General div to show states as squares -->
+      <div class="flex">
+        <div class="w-50 flex full-center state success">
+          <p><i class="fas fa-boxes"></i> Stock</p>
+        </div>
+        <div class="w-50 flex full-center state warning">
+          <p><i class="fas fa-dollar-sign"></i> Cash</p>
+        </div>
+        <div class="w-50 flex full-center state danger">
+          <p><i class="fas fa-trophy"></i> Conversion</p>
+        </div>
+        <div class="w-50 flex full-center state success">
+          <p><i class="fas fa-warehouse"></i> Warehouse</p>
+        </div>
+      </div>
+    </aside>
+    <!-- End of aside -->
+
+    <!-- Start of the main section with indicators -->
+    <section class="w-50">
+      <article>
+        <h2>Tendency indicators <i class="fas fa-stethoscope"></i></h2>
+        <div class="flex between">
+          <div class="flex full-center circle secondBackground warning">
+            <span>40$</span>
+            <p class="italic">Average purchasse</p>
+          </div>
+          <div class="flex full-center circle secondBackground danger">
+            <span>30%</span>
+            <p class="italic">Aborted</p>
+          </div>
+          <div class="flex full-center circle secondBackground warning">
+            <span>25480$</span>
+            <p class="italic">Monthly sales</p>
+          </div>
+          <div class="flex full-center circle secondBackground success">
+            <span>80%</span>
+            <p class="italic">Satisfaction</p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>Charts <i class="far fa-chart-bar"></i></h2>
+        <div class="flex between chart-container">
+          <p class="w-20">entertainement</p>
+          <div class="w-70 chart secondBackground">
+            <div class="mainBackground w-40 flex full-center">
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex between chart-container">
+          <p class="w-20">High tech</p>
+          <div class="w-70 chart secondBackground">
+            <div class="mainBackground w-80 flex full-center">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex between chart-container">
+          <p class="w-20">Clothes</p>
+          <div class="w-70 chart secondBackground">
+            <div class="mainBackground w-60 flex full-center">
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- End of main content with indicators -->
+
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
