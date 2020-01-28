@@ -19,7 +19,39 @@
 </head>
 
 <body>
-  
+  <!-- Top of the page -->
+  <header class="flex full-center mainBackground">
+    <h1>Sales dashboard</h1>
+  </header>
+
+  <!-- Start of main content with indicators -->
+  <main class="container flex between">
+    <!-- Start of left aside to display sales data -->
+    <aside>
+      <h2>Sales and states</h2>
+      <div>
+        <!-- Form to sort the data -->
+        <form action="index.html" method="post" class="flex">
+          <div>
+            <label for="name">Product</label>
+            <input type="text" id="name" name="article" value="" placeholder="Product's name">
+          </div>
+          <div>
+            <label for="price-select">Price</label>
+            <select name="price" id="price-select">
+              <option value="asc">- to +</option>
+              <option value="desc">+ to -</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity">Quantity > to</label>
+            <input type="number" id="quantity" name="quantity" value="0">
+          </div>
+          <div class="flex center" id="submit">
+            <input type="submit" name="submit" value="Sort">
+          </div>
+        </form>
+
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
