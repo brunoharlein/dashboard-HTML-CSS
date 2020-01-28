@@ -160,6 +160,14 @@ textarea {
      font-style: italic;
    }
 
+   .circle {
+     height: 130px;
+     width: 130px;
+     border-radius: 50%;
+     font-size: 0.8em;
+     flex-direction: column;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
