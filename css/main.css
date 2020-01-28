@@ -240,6 +240,21 @@ textarea {
      border: 2px solid #4d9078;
    }
 
+   input[type=submit]:hover {
+     border: 2px solid #4d9078;
+     background-color: #4d9078;
+     color: white;
+   }
+
+   form div {
+     width: 20%;
+     margin-right: 1em;
+   }
+
+   #submit {
+     align-items: flex-end;
+   }
+
 
 
 /* ==========================================================================
