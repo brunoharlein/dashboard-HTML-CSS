@@ -131,6 +131,35 @@ textarea {
      align-items: center;
    }
 
+   .mainBackground {
+     background-color: #4d9078;
+     color: white;
+   }
+
+   .secondBackground {
+     background-color: lightgrey;
+   }
+
+   .success {
+     background-color: #4d9078;
+   }
+
+   .warning {
+     background-color: #f3de8a;
+   }
+
+   .danger {
+     background-color: #eb9486;
+   }
+
+   .tcenter {
+     text-align: center;
+   }
+
+   .italic {
+     font-style: italic;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
