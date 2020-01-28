@@ -101,6 +101,36 @@ textarea {
      font-family: 'Roboto', sans-serif;
    }
 
+   /* Utility classes */
+
+   .container {
+     width: 90%;
+     margin: auto;
+     margin-top: 2em;
+   }
+
+   .flex {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .around {
+     justify-content: space-around;
+   }
+
+   .between {
+     justify-content: space-between;
+   }
+
+   .center {
+     justify-content: center;
+   }
+
+   .full-center {
+     justify-content: center;
+     align-items: center;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
